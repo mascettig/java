@@ -21,7 +21,7 @@ alert("Estas habilitado para ver el contenido de esta Pagina");
     
  }
 let inicio = prompt("ingrese un numero")
-let fin = 100
+let fin = 110
 for (inicio; inicio<= fin; inicio++) {
     console.log(inicio);
 }
