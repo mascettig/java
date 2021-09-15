@@ -19,5 +19,24 @@ alert("Estas habilitado para ver el contenido de esta Pagina");
 } else {
     alert("Esta pagina es para jovenes de 30 jajaja")
     
+ }
+let inicio = prompt("ingrese un numero")
+let fin = 100
+for (inicio; inicio<= fin; inicio++) {
+    console.log(inicio);
 }
 
+while (nombre != "Hola"){
+    switch (nombre){
+        case "Tomas":
+            alert("Hola Tomas");
+            break;
+        case "Gustavo":
+            alert("Hola Gustavo");
+            break
+        default:
+            alert("No sos Bienvenido")
+            break;
+    }
+ nombre = prompt("ingrese un nombre")
+}
