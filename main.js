@@ -75,3 +75,42 @@ function calculadora (operadorDeFuncion, numero1, numero2){
   }
 }
 console.log(calculadora(operador, PrimerNumero, SegundoNumero));
+
+function Persona(litetal){
+  this.nombre = litetal.nombre;
+  this.edad = litetal.edad;
+  this.localidad = literal.localidad;
+  this.hablar = function(){console.log("Hola Soy"+ this.nombre)
+}
+const persona1 = new Persona ({ nombre: "San Martin", edad: 39, localidad:"yapeyu"})
+persona1.hablar();
+
+class Producto {
+  constructor(nombre, precio) {
+    this.nombre = nombre.Pantalon(),
+    this.precio = parseFloat(precio);
+    this.vendido = false;
+  }
+  sumarIva(){
+    this.precio = this.precio * 1.21;
+  }
+  vender(){
+    this.vendido = true;
+  }
+}
+const producto1 = new Producto ("pantalon", "5000");
+const producto2 = new Producto ("Campera", "6500");
+producto1.sumarIva () ; 
+producto2.sumarIva () ;
+producto1.vender() ;}
+
+let lista = document.createElement("h2");
+lista.innerHTML = "Anime Que Me gustan";
+document.body.appendChild(lista);
+
+let personas = ["Caballeros del Zodiaco, Dr Stone , Dragonball Z, Detective Conan"];
+for (const persona of personas) {
+  let li = document.createElement ("li");
+  li.innerHTML = persona;
+  document.getElementById("personas").appendChild(li);
+}
