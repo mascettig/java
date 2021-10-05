@@ -114,3 +114,26 @@ for (const persona of personas) {
   li.innerHTML = persona;
   document.getElementById("personas").appendChild(li);
 }
+
+let boton = document.getElementById("btn");
+boton.addEventListener("click",respuesta);
+function respuesta(){
+  console.log("Respuesta de boton")
+}
+
+let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("sufmit", validarformulario);
+
+function validarformulario(e){
+  e.preventDefault();
+  let formulario = e.target;
+  console.log(formulario.childre[0].value);
+  console.log(formulario.children[1].value);
+  console.log(formulario.childre[2].value);
+  console.log(formulario.childre[3].value);
+  console.log(formulario.childre[4].value);
+  console.log(formulario.childre[5].value);
+  console.log(formulario.childre[6].value);
+
+
+}
