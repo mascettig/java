@@ -134,6 +134,21 @@ function validarformulario(e){
   console.log(formulario.childre[4].value);
   console.log(formulario.childre[5].value);
   console.log(formulario.childre[6].value);
-
-
 }
+
+const productos = [ { id: 1, nombre: "Zapatillas Nike", precio: 12500},
+{ id: 2, nombre:"Zapatillas Adidas", precio: 14500},
+{ id: 3, nombre: "Zapatillas Puma", precio: 12000 },
+{ id: 4, nombre: "Zapatillas Reebook", precio: 8500}];
+
+for (const producto of productos)(
+  $("#app"). append(`<div><h3> ID: ${productos.id}</h3>
+  <p> Pdoductos: ${productos.nombre}</p>
+  <b> $ ${productos.precio} </b><div>`);
+
+  
+
+
+
+  
+  
