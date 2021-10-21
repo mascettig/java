@@ -144,7 +144,24 @@ const productos = [ { id: 1, nombre: "Zapatillas Nike", precio: 12500},
 for (const producto of productos)(
   $("#app"). append(`<div><h3> ID: ${productos.id}</h3>
   <p> Pdoductos: ${productos.nombre}</p>
-  <b> $ ${productos.precio} </b><div>`);
+  <b> $ ${productos.precio} </b><div>`)
+
+const URLGET =
+  "https://jsonplacerholder.typicode.com/posts"
+  $("body").prepend(`<button id="btn1">GET>/button>`);
+  $("#btn1").click( () => {
+    $.get(URLGET, function (respuesta, estado) {
+      if(estado === "success"){
+        let misDatos = respuestas;
+        for (const dato of misDatos) {
+          $("body").prepend (`<div>
+                              <h3> $(dato.title)</h3>
+                              <p>$(dato.body)</p>
+                              </div>`);
+        }
+      }
+    })
+  });
 
   
 
